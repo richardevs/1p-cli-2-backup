@@ -1,9 +1,9 @@
 # 1p-cli-2-backup
 Simple 1Password backup script using 1Password CLI 2.  
 
-This sciprt is basically a 1Password CLI 2 adapted version of https://github.com/michael-batz/1password-backup.  
+This script is basically a 1Password CLI 2 adapted version of https://github.com/michael-batz/1password-backup.  
 
-It will list all items from the logged in account and list them all out to a file, which serves as a great offline backup.  
+It will list all items from the logged in account and fetch the details to a file, which serves as a great offline backup.  
 
 ## Requirements
 
