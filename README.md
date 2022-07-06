@@ -12,11 +12,11 @@ It will list all items from the logged in account and fetch the details to a fil
 
 ## Usage
 
-The following command will download all items from 1Password Cloud and store it into an AES256 encrypted output file. The script will ask for the passphrase to encrypt the output file.
+The following command will download all items from 1Password and store it into an AES256 encrypted output file. The script will ask for the passphrase to encrypt the output file.
 
 `./backup.sh -f <output file>`
 
-The following command will decrypt an existing output file and print the content of 1Password Cloud data to <output file>:
+The following command will decrypt an existing backup file and print the content of 1Password data to output file:
 
 `openssl enc -d -aes-256-cbc -pbkdf2 -in <backup file> -out <output file>`
 
