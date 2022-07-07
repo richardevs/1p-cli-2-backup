@@ -38,11 +38,12 @@ for item in $items
 do
     echo "  - get item ${item}..."
     output+=$(${tool_op} item get ${item})
+    output+=$'\n'
 done
 
 # encrypt items and write to output file
 echo "- store items in encrypted output file ${var_outputfile}..."
-echo $output | openssl enc -aes-256-cbc -pbkdf2 > ${var_outputfile}
+echo "$output" | openssl enc -aes-256-cbc -pbkdf2 > ${var_outputfile}
 
 # signout from 1Password
 echo "- signout from 1Password"
